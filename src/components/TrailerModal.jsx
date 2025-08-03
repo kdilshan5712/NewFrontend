@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback } from 'react';
-import styles from '../TrailerModal.module.css';
+import styles from './TrailerModal.module.css';
 
 const TrailerModal = ({ isOpen, onClose, trailerUrl, title }) => {
   const handleEscapeKey = useCallback((event) => {
