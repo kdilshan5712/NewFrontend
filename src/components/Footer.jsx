@@ -45,7 +45,6 @@ const styles = {
     backgroundColor: '#1c1c1c',
     color: '#ccc',
     padding: '2rem 1rem 1rem',
-    marginTop: '4rem',
     fontFamily: 'Arial, sans-serif',
   },
   container: {

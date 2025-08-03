@@ -38,7 +38,7 @@
     font-size: 4rem;
     line-height: 1.1;
     background-color: #00a4aa;
-    background-image: linear-gradient(45deg, #00a4aa, #000);
+    background-image: linear-gradient(45deg, #ffffff, #ffffff);
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -59,13 +59,13 @@
 
 .slider-btn{
     display: inline-block;
-    color: #717171;
-    background: #fff;
+    color: #000000;
+    background: #f8c602;
     padding: 0.625rem 1.875rem;
     margin-top: 2.125rem;
     text-decoration: none;
     text-transform: uppercase;
-    border: 2px solid #c2c2c2;
+    border: 1px solid #000000;
     border-radius: 3.125rem;
     transition: 0.3s ease-in-out;
 }
@@ -76,7 +76,7 @@
 }
 
 .Hero {
-  background-image: url('./images/dark-vip-cinema-studio-still-life.jpg');
+  background-image: url('./images/3d-view-couple-cinema-watching-movie.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -107,7 +107,7 @@
 
 :global(.myswiper) {
     width:100%;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
     
 }
 
@@ -143,8 +143,9 @@
     font-size: 1.4rem;
     line-height: 1.4;
     margin-bottom: 0.625rem;
+    margin-left: 1.23rem;
     padding: 0,0,0, 1.563rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 :global(.myswiper-slider p) {
@@ -163,5 +164,9 @@
 }
 
 :global(.swiper-pagination-bullet,.swiper-pagination-bullet-active) {
+    background: #f8c602;
+}
+:global(.swiper-pagination-bullet,.swiper-pagination-bullet) {
     background: #fff;
+    
 }
