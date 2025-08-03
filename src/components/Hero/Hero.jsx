@@ -12,25 +12,25 @@ import "swiper/css/autoplay";
 import styles from './Hero.module.css'
 
 const slider = [
-{title: " The Thor",
-  description: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  url: "/2.jpeg",},
+{title: "Devi Kusumasana",
+  description: "A gripping historical epic about royal intrigue, betrayal, and forbidden love, set against the backdrop of ancient Sri Lanka's majestic palaces and power struggles",
+  url: "/1_DeviKusumasana.jpg",},
 
-  {title: " The SpiderMan",
-  description: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  url: "/3.jpeg",},
+  {title: "Valampoori",
+  description: "A powerful story of politics, romance, and betrayal, following a determined leader who struggles for justice, navigating loyalty and corruption in rural Sri Lanka",
+  url: "/2_Valampuuri.jpg",},
 
-  {title: " The BatMan",
-  description: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  url: "/4.jpg",},
+  {title: "How To Train Your Dragon 4",
+  description: "Hiccup and Toothless reunite for a breathtaking adventure filled with friendship, loyalty, new dragons, thrilling battles, and heartwarming moments that redefine their legendary bond",
+  url: "/3_Dragon.jpg",},
 
-  {title: " The IronMan",
-  description: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  url: "/5.jpeg",},
+  {title: "Maalik",
+  description: "A farmer’s son rises from humble beginnings into the dangerous world of power, betrayal, and politics, becoming an unchallenged underworld figure feared by many",
+  url: "/5_Maalik.jpg",},
 
-  {title: " The SuperMan",
-  description: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  url: "/1.jpg",},
+  {title: "Baaghi",
+  description: "An unstoppable warrior defies all odds, confronting ruthless enemies and dangerous conspiracies, fighting fearlessly for love, honor, justice, and redemption against impossible challenges",
+  url: "/4_Baaghi.jpg",},
 
   
 ]
@@ -41,11 +41,11 @@ const Hero = () => {
       <div>
         <div className={styles['carousel-content']}>
           <span>discover</span>
-          <h1>Ongoing Films</h1>
+          <h1>Ongoing Movies</h1>
           <hr />
           <p>
-            simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-          </p>
+            Book your seats for the latest blockbusters now! Explore our collection of ongoing movies and enjoy a premium cinema experience with friends and family!          
+            </p>
           <Link to="/Selectmovie/1" className={styles['slider-btn']}>Ongoing Movies</Link>
         </div>
       </div>
@@ -92,7 +92,7 @@ const Hero = () => {
               <div>
                 <h2>{data.title}</h2>
                 <p>{data.description}</p>
-                <a href={`${data.url}`} target="_blank" className={styles ['slider-btn']}>explore</a>
+                <Link to={`/booking/${data.title}`} className={styles['slider-btn']}>Book Tickets</Link>
               </div>
 
             </SwiperSlide>
