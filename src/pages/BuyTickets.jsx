@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './BuyTickets.css';
 
-const LOCATION_NAME = "Film Hall Multiplex - Havelock City Mall";
+const LOCATION_NAME = "Film Hall Multiplex - Colombo City Center";
 
 const movieShowtimesData = [
   {

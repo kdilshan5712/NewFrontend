@@ -54,7 +54,7 @@ const SeatBooking = () => {
   return (
     <div className="booking-container">
       <div className="movie-info">
-        <h2>Movie Name</h2>
+        <h2>Maaalik</h2>
         <div className="show-details">7:00 PM | Colombo City Center</div>
       </div>
       <h2>Select Your Seats</h2>
@@ -110,7 +110,7 @@ const SeatBooking = () => {
         </p>
         <div className="ticket-selectors">
           
-            <>ADULT (LKR 3,800):
+            <>ADULT (LKR 800):
           <div>  <button onClick={() => {
               if (adultCount > 0) {
                 setAdultCount(adultCount - 1);
@@ -127,7 +127,7 @@ const SeatBooking = () => {
             </div></>
           </div>
           <div className="ticket-selectors">
-            ODC CHILD (LKR 3,700):
+            ODC CHILD (LKR 700):
            <div> <button onClick={() => {
               if (childCount > 0) {
                 setChildCount(childCount - 1);
